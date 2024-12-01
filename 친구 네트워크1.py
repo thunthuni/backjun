@@ -41,3 +41,9 @@ for tc in range(T):
 
         count = list(parents.values()).count(find(a))
         print(count)
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> c1d296daa1f39c381a18541154e57df0857ce78c
