@@ -7,22 +7,18 @@
     # 반보쿠
 # 마지막에 남는 카드는?
 
+from collections import deque
 import sys
 
 N = int(sys.stdin.readline())
 
-stack = set()
-for i in range(1, N+1):   # O(N)
-    stack.add(i)
+stack = deque(range(1, N+1))
 
-while len(stack) >= 1:
-    if len(stack) == 1:
-        print(*stack)
-        break
+while len(stack) > 1:
+    stack.popleft()
+    stack.append(stack.popleft())
 
-    else:
-        stack.pop()
-        stack.add(stack.pop())
+print(stack[0])
 
 # print(stack)
 ## 이 문제에서 사용하는 연산 정리 해봐 예를들어 맨 뒤추가 맨 앞 추가 이런식으로
