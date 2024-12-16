@@ -25,19 +25,5 @@ while sum(circle) != 0:
 print(result)
 
 
-    # if circle[0] == 0:
-    #     circle.append(circle.pop(0))
-    # if kth_cnt != K-1:
-    #     if circle[0] != 0:
-    #         kth_cnt += 1
-    #     circle.append(circle.pop(0))
-    #
-    # else:
-    #     result.append(circle.pop(0))
-    #     circle.append(0)
-    #     kth_cnt = 0
-
-
-
 print(f"<{', '.join(map(str, result))}>")
 
